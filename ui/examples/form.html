@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- ICONS Libreria -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--
+            EN: Do not use these links in your plugins. They are for web documentation only
+            ES: No use estos enlaces en su plugins. Son solo para la documentación web.
+        -->
+        <link href="../config.css" rel="stylesheet" type="text/css" >
+        <link href="../fw/css/style.css" rel="stylesheet" type="text/css">
+        <link href="../fw/css/class.css" rel="stylesheet" type="text/css">
+
+        <!--
+            EN: Original links that you should use in your plugins.
+            ES: Enlaces originales que debe usar en su plugins.
+        -->
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/config.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/style.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/class.css">
+    </head>
+
+    <!--
+        EN: Do not use the developer-web class in your plugins unless you are developing using a browser view.
+        ES: La clase developer-web no la uses en tus plugins a no ser que este desarrollando usando como vista un navegador. 
+    -->
+    <body id="app"  class="developer-web">
+        <main class="main" v-if="visible">
+
+            <section class="container paper j-s-center">
+                <div class="form">
+                    <div class="col-2">
+                        <label for="">
+                            <input placeholder="Name" type="text">
+                        </label>
+                        <label for="">
+                            <input placeholder="Buscar" type="search">
+                        </label>
+                    </div>
+                    
+                    <div class="col-2">
+                        <label for="">
+                            <input type="date">
+                        </label>
+                        <label for="">
+                            <input type="number">
+                        </label>
+                    </div>
+                    <div class="col-2">
+                        <label for="">
+                            <input type="checkbox" id="" value="">Valor
+                            <input type="checkbox" id="" value="">Valor
+                        </label>
+                        <label for="">
+                            <input type="radio" name="option"> Option1
+                            <input type="radio" name="option"> Option2
+                            <input type="radio" name="option"> Option3
+                        </label>
+                    </div>
+    
+                    <div class="col-2">
+                        <label for="">
+                            <input type="range">
+                        </label>
+                        <label for="">
+                            <input type="color">
+                        </label>
+                    </div>
+                    
+                    <div class="col-2">
+                        <input type="button" value="Enviar">
+                        <input type="submit">
+                    </div>
+    
+                    <textarea name="" id="" cols="" rows="10" placeholder="Escribe aqui"></textarea>
+                </div>
+            </section>
+
+        </main>
+    </body>
+
+</html>

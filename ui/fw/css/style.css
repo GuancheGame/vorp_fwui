@@ -1,0 +1,336 @@
+/* 
+    ---------------------------------------------------------------------------
+    STYLES
+    ---------------------------------------------------------------------------
+    EN: Styles to format the html. Do not modify this file. Consider creating a new css file in your plugins with your custom code.
+    ES: Estilos para formatear el html. No modificar este archivo. Considere crear un nuevo archivo css en su plugins con su código personalizado.
+*/
+
+*{ margin: 0; }
+*,*:before, *:after { box-sizing: inherit; }
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    /* Nueva especificaciÃģn de persolalizacion de la barra de desplazamiento */
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-background-secundary) var(--c-background);
+}
+
+body {
+    line-height: 1.1;
+    min-width: 0;
+    font-family: var(--font-text);
+    font-size: var(--font-size-m);
+    color: var(--c-text);
+    background: transparent;
+}
+
+main{
+    display: grid;
+    padding: var(--mp-s);
+    gap: var(--mp);
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+::selection {
+    background: var(--c-selection);
+    color: var(--bg-selection);
+}
+
+/* Personalizacion de la barra de desplazamiento para navegadores basados en webkit */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--c-bg-opacity);
+    border-radius: 2px;
+    border: 0px solid var(--c-bg);
+}
+
+p{
+    line-height: 1.1;
+}
+
+a {
+    cursor: pointer;
+    color: var(--c-link);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover::after,
+a:active::after,
+a:focus::after {
+    width: 100%;
+}
+
+
+a:hover {
+    color: var(--c-link);
+}
+
+p a{
+    display: inline-block;
+    color: var();
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--font-base);
+    text-transform: uppercase;
+}
+
+label{
+    align-items: center;
+    display: flex;
+    gap: var(--mp-s);
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid var(--c-base);
+    background-color: transparent;
+    color: var(--c-text);
+    font-family: var(---font-text);
+    font-size: var(--font-size-m);
+    outline: 0;
+    padding: 6px 6px 0 6px;
+    transition: var(--transition);
+    outline: 0;
+    color: var(--c-secondary);
+}
+
+input:focus{
+    border-color: var(--c-base);
+}
+
+/*input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="text"]
+{
+    box-shadow: inset var(--shadow)
+}*/
+
+input[type="range"] {
+    appearance: none;
+    height: 1px;
+    border-radius: 5px;
+    transition: 0.3;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: var(--c-base);
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    height: 1.5em;
+    padding: 0 2px;
+    position: relative;
+    width: 1.5em;
+    -webkit-appearance: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--c-btn);
+    /*background: var(--bg-btn);*/
+    transition: var(--transition);
+    display: block;
+    font-family: var(--font-base);
+    font-size: var(--font-size-m);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    background-image: var(--img-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+
+    border: none;
+    background-color: transparent;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover
+{
+    background: var(--img-bg-hover);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active
+{
+    background: var(--img-bg-hover);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    position:relative;
+    top:1px;
+}
+
+input[readonly]{
+    border-style: dotted;
+    cursor: not-allowed;
+    color: #777;
+}
+
+input[disabled]{
+    --input-border: #ccc;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-clip: content-box;
+    background-color: var(--c-tertiary);
+    border: 2px solid var(--c-base);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    outline: 0;
+    padding: 3px;
+    transition: var(--transition);
+    width: 25px;
+}
+
+input[type="checkbox"]:focus{
+    border: 1px solid var(--c-border);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--c-base);
+    border: 1px solid var(--c-base);
+}
+
+input[type="radio"]{
+    appearance: none;
+    background-clip: content-box;
+    background-color: var(--c-tertiary);
+    border: 2px solid var(--c-base);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 25px;
+    outline: 0;
+    padding: 3px;
+    transition: var(--transition);
+    width: 25px;
+}
+
+input[type="radio"]:focus{
+    border-color: var(--c-base);
+}
+
+input[type="radio"]:checked{
+    background-color: var(--c-base);
+    border: 1px solid var(--c-base);
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: var(--radius);
+    color: var(--c-text);
+    height: 20px;
+    outline: 0;
+    transition: var(--transition);
+    width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: var(--c-o-base);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--c-base);
+    border-radius: var(--radius);
+}
+
+select{
+    border:1px solid var(--c-base);
+    border-radius: 5px;
+    background-color: var(--c-background);
+    color: var(--c-text);
+    font-family: var(--font-1);
+    cursor: pointer;
+    outline: none;
+    padding: 5px 5px;
+    transition: var(--transition);
+}
+
+select *{
+    background-color: var(--c-background);
+}
+
+select:focus{
+    border-color: var(--c-base);
+}
+
+textarea{
+    border: none;
+    background-color: transparent;
+    color: var(--c-secondary);
+    font-family: var(--font-text);
+    font-size: var(--font-size-m);
+    outline: 0;
+    padding: 5px 5px;
+    transition: var(--transition);
+    width: 100%;
+}
+
+textarea:focus {
+    border-color: var(--c-base);
+}
+
+textarea[readonly] {
+    border-style: dotted;
+    cursor: not-allowed;
+    color: #777;
+}
+
+textarea[disabled]{
+    --input-border: #ccc;
+    background-color: #eee;
+    cursor: not-allowed;
+}

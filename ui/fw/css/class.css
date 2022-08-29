@@ -1,0 +1,448 @@
+/* 
+    ---------------------------------------------------------------------------
+    CLASS
+    ---------------------------------------------------------------------------
+    EN: The class.css file contains classes for developers who want to quickly implement a designer interface. 
+    ES: El archivo class.css contiene clases para desarrolladores que quieran implementar rapidamente una interface de diseño
+*/
+
+
+/* 
+    ---------------------------------------------------------------------------
+    Developer web class - Clases para dersarrollo web
+    ---------------------------------------------------------------------------
+    EN: These classes activate the test UI so that the developer has a view from the browser. Don't use it in your development.
+    ES: Estas clases activan la UI de prueba para que el desarrollar tenga una vista desde el navegador. No la use en su desarrollo.
+*/
+
+.developer-web{
+    background-image: url(../../assets/img/background-game.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    display: var(--ui-developer-web);
+}
+
+/*
+    ---------------------------------------------------------------------------
+    DESIGN - DISEÑO
+    ---------------------------------------------------------------------------
+    EN: Useful classes for UI DESIGN.
+    ES: Clases útiles para diseño de UI.
+    ---------------------------------------------------------------------------
+*/
+
+
+/* BACKGROUN - IMAGEN DE FONDO*/
+
+.img-bg{
+    background-image: var(--img-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+/* BOTON */
+
+.btn {
+    color: var(--c-btn);
+    /*background: var(--bg-btn);*/
+    transition: var(--transition);
+    display: block;
+    font-family: var(--font-base);
+    font-size: var(--font-size-m);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    background-image: var(--img-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.btn:hover, .active {
+    background: var(--img-bg-hover);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+/* TITLE - TÍTULO */
+
+.title{
+    color: var(--c-primary);
+    font-family: var(--font-base);
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--mp-m);
+    margin: var(--mp-m);
+    margin-bottom: 0;
+    background-image: var(--img-bg-title);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title img {
+    max-width: 45px;
+    height: auto;
+    margin: 0 var(--mp-m);
+}
+
+/* CIRCULAR ICONS MIC - ICONO CIRCULAR DE MICRO */
+
+.icon-circle {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: black;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 4px solid black;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.icon-circle img {
+    transform: rotate(-45deg);
+    width: 100%;
+    height: auto;
+    max-width: 23px;
+}
+
+.icon-circle i {
+    transform: rotate(-45deg);
+    font-size: 18px;
+    color: white;
+}
+
+/* CONTAINERS - CONTENEDORES */
+
+.main {
+    padding: var(--mp);
+}
+
+.main-nav {
+    grid-template-columns: 400px 1fr;
+    padding: var(--mp);
+}
+
+.main-ui {
+    grid-template-columns: 250px 1fr 250px;
+    gap: var(--mp-s);
+    padding: var(--mp-m);
+}
+
+.main-ui .center-ui{
+    display: grid;
+}
+
+.main-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    overflow-y: scroll;
+}
+
+.statistics{
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    gap: var(--mp-s);
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--mp-m);
+}
+
+.form{
+    display: grid;
+    height: fit-content;
+    gap: var(--mp-m);
+}
+
+/* NAVS - NAVEGADORES */
+
+.nav-v {
+    background-image: var(--img-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow-y: scroll;
+}
+
+.nav-v nav {
+    overflow: auto;
+    padding: 0 var(--mp-m);
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: var(--mp-m);
+    margin-top: var(--mp-m);
+}
+
+.nav-h {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: var(--mp-m);
+}
+
+/******/
+
+.nav-loop{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: var(--mp-m);
+}
+
+.nav-loop a{
+    display: grid;
+    align-items: center;
+}
+
+.nav-loop a i{
+    font-size: var(--font-size-xl);
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.nav-loop a:hover i{
+    opacity: 1;
+}
+
+/* PROGRESBAR RADIAL - BARRA DE PROGRESO RADIAL */
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+}
+  
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+  
+div[role="progressbar"] {
+    --size: 2.5rem;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+        radial-gradient(closest-side, black 80%, transparent 0 99.9%, white 0),
+        conic-gradient(white calc(var(--pgPercentage) * 1%), transparent 0)
+    ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: white;
+}
+  
+/*
+EN: If you remove the icon and activate this class you will see the % number in the center
+ES: Si quitas el icono y activas esta clase se vera el numero del % en el centro
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+*/
+
+div[role="progressbar"] i {
+    font-size: 1rem;
+}
+
+/* NOTIFICATIONS - NOTIFICACIONES */
+
+.notification{
+    max-width: 300px;
+    height: fit-content;
+}
+
+.notification p{
+    padding: var(--mp-m);
+    text-align: center;
+}
+
+/******/
+
+.notification-zone {
+    max-width: 470px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.notification-zone .title{
+    margin-bottom: 0;
+}
+
+.notification-zone p{
+    padding: var(--mp-s);
+    text-align: justify;
+}
+
+.notification-zone div{
+    margin: 0 var(--mp-m);
+    border-top: var(--border);
+    text-align: center;
+    padding: var(--mp-s);
+}
+
+.notification-zone div h2{
+    margin-bottom: var(--mp-s);
+    font-size: var(--font-size-m);
+    color: var(--c-base);
+}
+
+.notification-zone .region{
+    color: var(--c-base);
+    text-align: center;
+}
+
+/* PAPER - PAPEL */
+
+.paper {
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #fffef0;
+    /* v2.1 : borders effect with SVG : try to play with scale to change them */
+    filter: url(#wavy2);
+    /* v2.2 : Noise added for a vellum paper effect */
+    color: var(--c-text-secundary);
+    padding: var(--mp);
+}
+
+.paper article header h1{
+    color: var(--c-text-secundary);
+    font-family: var(--font-base);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: var(--mp-m);
+    margin-bottom: var(--mp-m);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.paper article footer p { 
+    text-align: right;
+    margin: var(--mp-l) 0 var(--mp-l) 0;
+}
+
+/* ACORDEON */
+
+.accordion-main {
+    max-width: 750px;
+}
+
+.accordion-main .accordion-item {
+    margin-bottom: 10px;
+    padding: var(--mp-m);
+}
+
+.accordion-main .accordion-title {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.accordion-main .accordion-title h5 {
+    margin: 0;
+}
+
+.accordion-main .accordion-body {
+    overflow: hidden;
+    padding: 0 20px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+}
+
+.accordion-main .accordion-item.accordion-open .accordion-body {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    padding: 20px 20px;
+}
+
+/* 
+    ---------------------------------------------------------------------------
+    END DEVELOPER web class
+    ---------------------------------------------------------------------------
+
+
+
+    ---------------------------------------------------------------------------
+    TOOLS - HERRAMIENTAS
+    ---------------------------------------------------------------------------
+    EN: Useful classes for developers.
+    ES: Clases útiles para desarrolladores.
+    ---------------------------------------------------------------------------
+*/
+
+/* 
+    EN: Text align  
+    ES: Alinear texto 
+*/
+
+.t-justify { text-align: justify !important; }
+.t-center { text-align: center !important; }
+.t-right { text-align: right !important; }
+.t-left { text-align: left !important; }
+.word-break { word-break: break-all !important; }
+
+/* 
+    EN: Container align 
+    ES: Alinear contenedor 
+*/
+
+/* Vertical */
+.a-i-baseline { align-items: baseline;}
+.a-i-end { align-items: end;}
+.a-i-center { align-items: center;}
+
+.a-s-baseline { align-self: baseline; }
+.a-s-center { align-self: center; }
+.a-s-end { align-self: end; }
+
+/* Horizontal */
+.j-c-center { justify-content: center; }
+.j-c-left { justify-content: left; }
+.j-c-right { justify-content: right; }
+
+.j-s-baseline { justify-self: baseline; }
+.j-s-center { justify-self: center; }
+.j-s-end { justify-self: end; }
+
+/* Display */
+.muted{ display: block; }
+.hide { display: none; }
+.show { display: block; }
+
+/* 
+    ---------------------------------------------------------------------------
+    END TOOLS
+    ---------------------------------------------------------------------------
+*/

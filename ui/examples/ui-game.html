@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- ICONS Libreria -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--
+            EN: Do not use these links in your plugins. They are for web documentation only
+            ES: No use estos enlaces en su plugins. Son solo para la documentación web.
+        -->
+        <link href="../config.css" rel="stylesheet" type="text/css" >
+        <link href="../fw/css/style.css" rel="stylesheet" type="text/css">
+        <link href="../fw/css/class.css" rel="stylesheet" type="text/css">
+
+        <!--
+            EN: Original links that you should use in your plugins.
+            ES: Enlaces originales que debe usar en su plugins.
+        -->
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/config.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/style.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/class.css">
+    </head>
+
+    <!--
+        EN: Do not use the developer-web class in your plugins unless you are developing using a browser view.
+        ES: La clase developer-web no la uses en tus plugins a no ser que este desarrollando usando como vista un navegador. 
+    -->
+    <body id="app" class="developer-web">
+        <main class="main-ui" v-if="visible">
+
+            <section class="notification a-s-center img-bg">
+                <h1 class="title"> INFO </h1>
+                <p class="t-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eum quibusdam sapiente porro deserunt.</p>
+            </section>
+            
+            <div class="center-ui">
+                
+                <section class="notification-zone img-bg">  
+                    <h1 class="title">
+                        <!--
+                            EN: Use this url format for the plugin.
+                            ES: Use este formato de url para el plugin.
+
+                            <img src="nui://vorp_fwui/ui/assets/img/logo.webp" alt="Logo"> 
+                        -->
+                        <img src="../assets/img/logo.webp" alt="Logo"> 
+                        VALENTINE
+                        <img src="../assets/img/logo.webp" alt="Logo"> 
+                    </h1>
+                    <p class="region">REGIÓN</p>
+                    <div>
+                        <h2>Valentine</h2>
+                        <span>10:00 AM - 20ºC</span>
+                    </div>
+                </section>
+
+                <section class="statistics j-c-center a-i-end">
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:85">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:50">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:35">
+                        <i class="fa-solid fa-whiskey-glass"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:45">
+                        <i class="fa-solid fa-horse-head"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:15">
+                        <i class="fa-solid fa-horse"></i>
+                    </div>
+        
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:75">
+                        <i class="fa-solid fa-hat-cowboy"></i>
+                    </div>
+                </section>
+                
+            </div>
+
+            <section class="notification a-s-center img-bg">
+                <p><i class="fa-solid fa-circle-info"></i> Lorem ipsum dolor</p>
+            </section>
+
+        </main>
+    </body>
+
+</html>

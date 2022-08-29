@@ -1,0 +1,115 @@
+/* 
+    ---------------------------------------------------------------------------
+    CONFIG FRAMEWORK VORP UI
+    ---------------------------------------------------------------------------
+    EN: 
+    - This file is in charge of manipulating how you want the design of your UI. 
+    - The intention is that all plugins share WOPR FW UI as the default UI layout library and you do the layout manipulation from this config file.
+    ES: 
+    - Este archivo es el encargado de manipular como quiere el diseño de su UI. 
+    - La intención es que todo los plugins compartan WOPR FW UI como libreria predeterminada para diseñar UI y usted haga la manipulación de diseño desde este archivo de configuración
+*/
+
+/**************************
+    URL FONT
+**************************/
+
+@font-face {
+    font-family: Rokkit;
+    src: url(assets/fonts/Rokkitt-Regular.ttf);
+}
+
+@font-face {
+    font-family: RDR Lino;
+    src: url(assets/fonts/rdrlino-regular-webfont.woff);
+}  
+
+:root {
+
+    /**************************
+        CONFIG DEVELOPER WEB
+    **************************/
+        
+    /* 
+        option: block or none
+        
+        EN: Hide or show UI documentation in web format 
+        ES: Oculta o muestra la documentación de la UI en formato web
+    */
+    --ui-developer-web: block; 
+
+    /**************************
+        CONFIG DESING
+    **************************/
+
+    /* Colors - Colores */
+    --c-base: rgba(179, 1, 1, 1);
+    --c-primary: rgba(255, 255, 255, 1);
+    --c-secondary: rgba(0, 0, 0, 1);
+
+    /* Backgrond - Color de fondo */
+    --c-bg: rgba(0, 0, 0, 1);
+    --c-bg-opacity: rgba(0, 0, 0, 0.3);
+    --c-bg-secundary: rgba(255, 255, 255, 1);
+
+
+    /* Img */
+    --img-logo: url(https://media.discordapp.net/attachments/1013804950058442798/1013805061996019772/logo.webp);
+    --img-bg: url(https://media.discordapp.net/attachments/1013804950058442798/1013805346550198282/background.png);
+    --img-bg-paper: url(https://media.discordapp.net/attachments/1013804950058442798/1013859215724527616/paper.png);
+    --img-bg-title: url(https://media.discordapp.net/attachments/1013804950058442798/1013808518626824253/bg.png);
+    --img-bg-hover: url(https://media.discordapp.net/attachments/1013804950058442798/1013807475222401135/background-red.png);
+
+    /* Font - Texto */
+    --c-text: rgba(255, 255, 255, 1);
+    --c-text-opacity: rgba(255, 255, 255, 0.8);
+    --c-text-secundary: rgba(0, 0, 0, 1);
+    --c-text-secundary-opacity: rgba(0, 0, 0, 0.8);
+    --text-shadow: 0px 0px 5px #000000;
+    --font-base: "RDR Lino";
+    --font-text: "Rokkit";
+    --font-size-s: 0.9rem;
+    --font-size-m: 1.2rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 4rem;
+    --font-size-xxl: 5rem;
+    --font-size-xxxl: 6rem;
+
+    /* Border - Bordes */
+    --c-border: rgba(255, 255, 255, 0.35);
+    --border: 1px solid var(--c-border);
+    --radius: 5px;
+
+    /* Shadows - Sombras */
+    --c-shadow: rgb(175, 175, 175);
+    --shadow: 0 10px 60px -15px var(--c-shadow);
+    --shadow-hover: 0 10px 25px -10px var(--c-shadow);
+
+    /* Animations - Animaciones */
+    --transition: 0.3s;
+
+    /* Padding and Margin - Margenes interiores y esteriores*/
+    --mp: 5vw;
+    --mp-s: 10px;
+    --mp-m: 25px;
+    --mp-l: 50px;
+    --mp-xl: 100px;
+    --mp-xxl: 250px;
+    --mp-xxxl: 500px;
+  
+    /* Boton */
+    --c-btn: var(--c-text);
+    --bg-btn: var(--c-background);
+  
+    /* Links - Enlaces */
+    --c-link: var(--c-text);
+    --c-link-hover: var(--c-base);
+    --c-link-active: var(--c-base);
+  
+    /* Subrayado */
+    --c-selection: var(--c-base);
+    --bg-selection: rgba(255, 255, 255, 1);
+
+    /* Icons */
+    --size-icon: 1.8rem;
+}
