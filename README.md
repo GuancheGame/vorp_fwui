@@ -12,25 +12,25 @@ Desarrolla plugins para VORP y utiliza este FW para construir rapidamente interf
 * Now you are ready to get coding!
 
 ## How can I use this Codebase?
-* Download this repo
+* Añada los siguientes enlaces de archivo en su plugins
 ```
 <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/config.css">
 <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/style.css">
 <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/class.css">
+<script src="nui://vorp_fwui/ui/fw/js/funtions.js"></script>
 ```
-* Copy and paste `vorp_fwui` folder to `resources/[vorp_essentials]`
-* Rename `vorp_fwui-main` to `vorp_fwui` <<<<<<<<<<<<< **!important**
-* Add `vorp_fwui` to your `server.cfg` or `resources.cfg` file
-* Now you are ready to get coding!
+* Listo usted ja puede usar VORP FW UI en su plugins
 
-## Developer Tips
-1. Use `PlayerPedId()` dont use `GetPlayerPed(-1)` as it is more optimal
-2. If you are looking to calculate distance between coordinates. **Do not** use `GetDistanceBetweenCoords`, instead **use** with Lua math `#(vector3 - vector3)` or `Vdist2`  its much faster and optimized
-3. Dont use `table.insert` USE ` tableName[#tableName+1] = useThis`
-4. Control your `Citizen.CreateThread` `while true` loops with ` sleep = Wait(1000)` in the threads to control the threads tick rate (how often/fast the loop cycles)
-5. Use local variables whenever you can to help reduce your scripts overall memory consumption. _Example:_ `local str = "hello"`
-6. Instead of `if this ~= nil` use `if this then`. This method checks for nil and/or false at the same time
-7. Check `if the player is allowed` before `checking distance` or `displaying something`. There is no need to run code if the client isn't meant to use it.. _Example:_ If you are checking a player distance that is job specific, then add/use a job check with playerjob. Perform the check before executing any other code that is dependant on it.
+## Como documentarme?
+* Puedes usar VORP FW UI con el navegador web y ver los ejemplos
+* En el archivo `config.css` busca la variable `--ui-developer-web: none; ` y cambiala por `--ui-developer-web: block;` Recuerda poberla en `none` cuando termines.
+* Ejecuta el archivo `index.html` en tu navegador y navega por los diferentes ejemplos. 
+* Revisa el código de los archivos de la carpetda `examples` para tener una idea de como desarrollar tus UI.
+* Dentro de cada archivo de ejemplos html y el fw encontraras comentarios que documentan y ayudan a entender el Framework
+* El archivo `config.css` es el encargado de manejar la configuración del diseño global.
+* El archivo `style.css` se encarga de formatear el html. 
+* El archivo `class.css` es el encargado de facilitar clases de diseños predefinidos y herramientas para el desarrollo de UI rapidamente
+* Recomiendo no tocar los archivos `style.css` y `class.css`. Si nesecita hacer cambios, considere crear su propio archivo css y renombre los que quiere cambiar.
 
 ## Need More Support? 
 - [Guanche Game](https://discord.gg/DHGVAbCj7N)
