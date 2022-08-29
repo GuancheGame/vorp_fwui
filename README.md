@@ -13,6 +13,11 @@ Desarrolla plugins para VORP y utiliza este FW para construir rapidamente interf
 
 ## How can I use this Codebase?
 * Download this repo
+```
+<link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/config.css">
+<link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/style.css">
+<link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/class.css">
+```
 * Copy and paste `vorp_fwui` folder to `resources/[vorp_essentials]`
 * Rename `vorp_fwui-main` to `vorp_fwui` <<<<<<<<<<<<< **!important**
 * Add `vorp_fwui` to your `server.cfg` or `resources.cfg` file
