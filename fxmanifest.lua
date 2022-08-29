@@ -5,7 +5,7 @@ game 'rdr3'
 lua54 'yes'
 version '0.0.1'
 vorp_name 'VORP Framewprk UI'
-vorp_github 'https://github.com/VORPCORE/vorp_zonenotify'
+vorp_github 'https://github.com/GuancheGame/vorp_fwui'
 author '[Guanche]'
 
 ---------------- THE FILE FRAMEWOKS ----------------------------------------------
