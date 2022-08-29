@@ -1,10 +1,10 @@
 # VORP Framework UI
 > A frontend Framework to facilitate UI development in VORP
 
-## What is a VORP Framework UI?! - Que es VORP Framework UI?!
+## What is a VORP Framework UI?!
 Develop plugins for VORP and use this FW to quickly build user interface. It allows designers to quickly modify the layout from a single global css variable file.
 
-## How to install - Como instalar
+## How to install 
 * Download this repo
 * Copy and paste `vorp_fwui` folder to `resources/[vorp_essentials]`
 * Rename `vorp_fwui-main` to `vorp_fwui` <<<<<<<<<<<<< **!important**
@@ -20,7 +20,7 @@ Develop plugins for VORP and use this FW to quickly build user interface. It all
 ```
 * Done you can now use VORP FW UI in your plugins
 
-## Como documentarme?
+## How to document myself?
 * You can use VORP FW UI with web browser and see the examples
 * In the `config.css` file look for the variable `--ui-developer-web: none; ` and change it to `--ui-developer-web: block;` Remember to set it to `none` when you're done.
 * Run the `index.html` file in your browser and navigate through the different examples.
