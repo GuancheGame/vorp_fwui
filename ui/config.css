@@ -36,7 +36,7 @@
         EN: Hide or show UI documentation in web format 
         ES: Oculta o muestra la documentación de la UI en formato web
     */
-    --ui-developer-web: block; 
+    --ui-developer-web: none; 
 
     /**************************
         CONFIG DESING
@@ -47,7 +47,7 @@
     --c-primary: rgba(255, 255, 255, 1);
     --c-secondary: rgba(0, 0, 0, 1);
 
-    /* Backgrond - Color de fondo */
+    /* Background - Color de fondo */
     --c-bg: rgba(0, 0, 0, 1);
     --c-bg-opacity: rgba(0, 0, 0, 0.3);
     --c-bg-secundary: rgba(255, 255, 255, 1);

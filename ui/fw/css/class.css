@@ -302,8 +302,13 @@ div[role="progressbar"] i {
 }
 
 .notification-zone p{
-    padding: var(--mp-s);
+    padding: var(--mp-s) var(--mp-m);
     text-align: justify;
+}
+
+.notification-zone p.district{
+    color: var(--c-base);
+    text-align: center;
 }
 
 .notification-zone div{
@@ -317,11 +322,6 @@ div[role="progressbar"] i {
     margin-bottom: var(--mp-s);
     font-size: var(--font-size-m);
     color: var(--c-base);
-}
-
-.notification-zone .region{
-    color: var(--c-base);
-    text-align: center;
 }
 
 /* PAPER - PAPEL */

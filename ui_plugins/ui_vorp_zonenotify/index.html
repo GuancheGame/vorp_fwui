@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/config.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/style.css">
+        <link rel="stylesheet" type="text/css" href="nui://vorp_fwui/ui/fw/css/class.css">
+    </head>
+
+    <body id="app">
+        <main v-if="visible">
+
+            <section class="notification-zone img-bg">  
+                <h1 class="title">
+                    <img src="nui://vorp_fwui/ui/assets/img/logo.webp" alt="Logo"> 
+                    {{title}}
+                    <img src="nui://vorp_fwui/ui/assets/img/logo.webp" alt="Logo">
+                </h1>
+                <p class="district">{{title == district ? '' :  district.replace(/[A-Z]/g, ' $&').trim()  }} </p>
+                <div>
+                    <h2>{{state != 'Unknown' ? state.replace(/[A-Z]/g, ' $&').trim() : ''}}</h2>
+                    <span>{{time}} - {{temp}}</span>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>
+
+<script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
+<script src="app.js"></script>
