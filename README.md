@@ -32,8 +32,7 @@ Develop plugins for VORP and use this FW to quickly build user interface. It all
 * I recommend not touching the `style.css` and `class.css` files. If you need to make changes, consider creating your own css file and rename the ones you want to change.
 * In the ui_plugins folder you will find the UI of the vorp plugins that I am modifying. If you want to use them, don't replace it. Delete the original files and add only the ones that are in my repository.
 
-## Need More Support? 
-- [Guanche Game](https://discord.gg/fjAfmVgf5B)
+## Need More Support?
 - [Vorp Disord](https://discord.gg/DHGVAbCj7N)
 
 ## Requirements
