@@ -160,9 +160,12 @@
 
 .statistics{
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: var(--grid-auto-flow-statistics);
     text-align: center;
     gap: var(--mp-s);
+    align-self: var(--align-self-statistics);
+    justify-content: var(--justify-content-statistics);
+    margin: var(--margin-statistics);
 }
 
 .col-2 {

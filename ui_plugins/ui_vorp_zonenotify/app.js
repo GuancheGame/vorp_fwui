@@ -2,16 +2,16 @@ const { createApp } = Vue
 
   createApp({
     data() {
-      return {
-        district: 'Unknown',
-        town: 'Unknown',
-        time: '10:00:00 am',
-        temp: '0°c',
-        state: 'Ambarino',
-        printed: 'return "Unknown"',
-        written: 'Unknown',
-        visible: false
-      }
+        return {
+            district: 'Unknown',
+            town: 'Unknown',
+            time: '10:00:00 am',
+            temp: '0°c',
+            state: 'Ambarino',
+            printed: 'return "Unknown"',
+            written: 'Unknown',
+            visible: false
+        }
     },
     mounted() {
         window.addEventListener('message', this.onMessage);

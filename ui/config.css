@@ -36,7 +36,7 @@
         EN: Hide or show UI documentation in web format 
         ES: Oculta o muestra la documentación de la UI en formato web
     */
-    --ui-developer-web: none; 
+    --ui-developer-web: block; 
 
     /**************************
         CONFIG DESING
@@ -112,4 +112,15 @@
 
     /* Icons */
     --size-icon: 1.8rem;
+
+
+    /*
+    * PLUGINS CONGIF
+    */
+
+    /* UI statistics */
+    --grid-auto-flow-statistics: column;  /* OPTIONS: column, initial */           
+    --justify-content-statistics: center; /* OPTIONS: center, start, end*/
+    --align-self-statistics: end;         /* OPTIONS: center, start, end*/
+    --margin-statistics: 0 0 0 0;         /* MARGIN: top, right, bottom, left*/
 }
