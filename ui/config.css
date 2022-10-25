@@ -124,7 +124,7 @@
     --margin-statistics: 0 0 0 0;           /* MARGIN: top, right, bottom, left*/
 
     /* Zonenotify */
-    --bg-zonenotify: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg);         /* OPTIONS: var(--my-var) or url(my-url.jpg)*/ 
+    --bg-zonenotify: var(--img-bg);         /* OPTIONS: var(--my-var) or url(my-url.jpg)*/ 
     --width-zonenotify: 470px;              /* OPTIONS: Width */ 
     --margin-zonenotify: 0 0 0 0;           /* MARGIN: top, right, bottom, left*/
     --height-zonenotify: fit-content;       /* OPTIONS: height */ 
