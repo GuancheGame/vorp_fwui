@@ -63,7 +63,7 @@
     background-size: 100% 100%;
 }
 
-.btn:hover, .active {
+.btn:hover, .btn.active {
     background: var(--img-bg-hover);
     background-position: center;
     background-repeat: no-repeat;
@@ -130,22 +130,36 @@
 /* CONTAINERS - CONTENEDORES */
 
 .main {
-    padding: var(--mp);
-}
-
-.main-nav {
-    grid-template-columns: 400px 1fr;
-    padding: var(--mp);
+    display: grid;
+    padding: var(--mp-s);
+    gap: var(--mp);
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 .main-ui {
+    display: grid;
     grid-template-columns: 250px 1fr 250px;
-    gap: var(--mp-s);
-    padding: var(--mp-m);
+    padding: var(--mp-s);
+    gap: var(--mp);
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 .main-ui .center-ui{
     display: grid;
+}
+
+.main-nav {
+    grid-template-columns: 400px 1fr;
+    display: grid;
+    padding: var(--mp-s);
+    gap: var(--mp);
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 .main-center {
@@ -164,7 +178,7 @@
     text-align: center;
     gap: var(--mp-s);
     align-self: var(--align-self-statistics);
-    justify-content: var(--justify-content-statistics);
+    justify-self: var(--justify-self-statistics);
     margin: var(--margin-statistics);
 }
 
@@ -282,46 +296,82 @@ div[role="progressbar"] i {
 
 /* NOTIFICATIONS - NOTIFICACIONES */
 
-.notification{
-    max-width: 300px;
-    height: fit-content;
+.notification-info{
+    width: 100%;
+    max-width: var(--width-notification-info);
+    height: var(--height-notification-info);
+    margin: var(--margin-notification-info);
+    align-self: var(--align-self-notification-info);
+    justify-self: var(--justify-self-notification-info);
+    background-image: var(--bg-notification-info);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
 }
 
-.notification p{
+.notification-info p{
+    padding: var(--mp-m);
+    text-align: center;
+}
+
+.notification-item{
+    width: 100%;
+    max-width: var(--width-notification-item);
+    height: var(--height-notification-item);
+    margin: var(--margin-notification-item);
+    align-self: var(--align-self-notification-item);
+    justify-self: var(--justify-self-notification-item);
+    background-image: var(--bg-notification-item);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.notification-item p{
     padding: var(--mp-m);
     text-align: center;
 }
 
 /******/
 
-.notification-zone {
-    max-width: 470px;
-    margin: 0 auto;
-    height: fit-content;
+.zonenotify {
+    width: 100%;
+    max-width: var(--width-zonenotify);
+    margin: var(--margin-zonenotify);
+    height: var(--height-zonenotify);
+    align-self: var(--align-self-zonenotify);
+    justify-self: var(--justify-self-zonenotify);
+    background-image: var(--bg-zonenotify);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
 }
 
-.notification-zone .title{
+.zonenotify .title{
     margin-bottom: 0;
 }
 
-.notification-zone p{
+.zonenotify p{
     padding: var(--mp-s) var(--mp-m);
     text-align: justify;
 }
 
-.notification-zone p.district{
+.zonenotify p.district{
     color: var(--c-base);
     text-align: center;
 }
 
-.notification-zone div{
+.zonenotify div{
     margin: 0 var(--mp-m);
     border-top: var(--border);
     text-align: center;
     padding: var(--mp-s);
 }
 
-.notification-zone div h2{
+.zonenotify div h2{
     margin-bottom: var(--mp-s);
     font-size: var(--font-size-m);
     color: var(--c-base);
@@ -427,6 +477,7 @@ div[role="progressbar"] i {
 .a-i-center { align-items: center;}
 
 .a-s-baseline { align-self: baseline; }
+.a-s-start { align-self: start; }
 .a-s-center { align-self: center; }
 .a-s-end { align-self: end; }
 
@@ -436,6 +487,7 @@ div[role="progressbar"] i {
 .j-c-right { justify-content: right; }
 
 .j-s-baseline { justify-self: baseline; }
+.j-s-start { justify-self: start; }
 .j-s-center { justify-self: center; }
 .j-s-end { justify-self: end; }
 

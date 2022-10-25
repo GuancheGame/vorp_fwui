@@ -26,15 +26,6 @@ body {
     background: transparent;
 }
 
-main{
-    display: grid;
-    padding: var(--mp-s);
-    gap: var(--mp);
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-}
-
 ::selection {
     background: var(--c-selection);
     color: var(--bg-selection);

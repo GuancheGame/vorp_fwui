@@ -27,40 +27,27 @@
         ES: La clase developer-web no la uses en tus plugins a no ser que este desarrollando usando como vista un navegador. 
     -->
     <body id="app" class="developer-web" >
-        <main class="main-ui" v-if="visible">
+        <main class="main" v-if="visible">
 
-            <section class="notification a-s-center img-bg">
-                <h1 class="title"> INFO </h1>
-                <p class="t-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eum quibusdam sapiente porro deserunt.</p>
+            <section class="zonenotify">  
+                <h1 class="title">
+                    <!--
+                        EN: Use this url format for the plugin or a direct internet url.
+                        ES: Use este formato de url para el plugin o una url directa de internet.
+
+                        <img src="nui://vorp_fwui/ui/assets/img/logo.webp" alt="Logo"> 
+                    -->
+                    <img src="../assets/img/logo.webp" alt="Logo"> 
+                    VALENTINE
+                    <img src="../assets/img/logo.webp" alt="Logo"> 
+                </h1>
+                <p class="district">Distrito</p>
+                <div>
+                    <h2>Valentine</h2>
+                    <span>10:00 AM - 20ºC</span>
+                </div>
             </section>
-            
-            <div class="center-ui">
                 
-                <section class="notification-zone img-bg">  
-                    <h1 class="title">
-                        <!--
-                            EN: Use this url format for the plugin.
-                            ES: Use este formato de url para el plugin.
-    
-                            <img src="nui://vorp_fwui/ui/assets/img/logo.webp" alt="Logo"> 
-                        -->
-                        <img src="../assets/img/logo.webp" alt="Logo"> 
-                        VALENTINE
-                        <img src="../assets/img/logo.webp" alt="Logo"> 
-                    </h1>
-                    <p class="district">Distrito</p>
-                    <div>
-                        <h2>Valentine</h2>
-                        <span>10:00 AM - 20ºC</span>
-                    </div>
-                </section>
-                
-            </div>
-
-            <section class="notification a-s-center j-c-right img-bg">
-                <p><i class="fa-solid fa-circle-info"></i> Lorem ipsum dolor</p>
-            </section>
-
         </main>
     </body>
 

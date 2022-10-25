@@ -113,14 +113,38 @@
     /* Icons */
     --size-icon: 1.8rem;
 
+    /**************************
+        CONFIG PLUGINS
+    **************************/
 
-    /*
-    * PLUGINS CONGIF
-    */
+    /* UI statistics - vorp_metabolism */
+    --grid-auto-flow-statistics: column;    /* OPTIONS: column, initial */           
+    --justify-self-statistics: center;      /* OPTIONS: center, start, end*/
+    --align-self-statistics: end;           /* OPTIONS: center, start, end*/
+    --margin-statistics: 0 0 0 0;           /* MARGIN: top, right, bottom, left*/
 
-    /* UI statistics */
-    --grid-auto-flow-statistics: column;  /* OPTIONS: column, initial */           
-    --justify-content-statistics: center; /* OPTIONS: center, start, end*/
-    --align-self-statistics: end;         /* OPTIONS: center, start, end*/
-    --margin-statistics: 0 0 0 0;         /* MARGIN: top, right, bottom, left*/
+    /* Zonenotify */
+    --bg-zonenotify: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg);         /* OPTIONS: var(--my-var) or url(my-url.jpg)*/ 
+    --width-zonenotify: 470px;              /* OPTIONS: Width */ 
+    --margin-zonenotify: 0 0 0 0;           /* MARGIN: top, right, bottom, left*/
+    --height-zonenotify: fit-content;       /* OPTIONS: height */ 
+    --align-self-zonenotify: start;         /* OPTIONS: center, start, end*/
+    --justify-self-zonenotify: center;      /* OPTINOS: top, right, bottom, left*/
+
+    /* Notification Info */
+    --bg-notification-info: var(--img-bg);
+    --width-notification-info: 300px;
+    --margin-notification-info: 0 0 0 0;
+    --height-notification-info: fit-content;
+    --align-self-notification-info: center;
+    --justify-self-notification-info: start;
+
+    /* Notification Item */
+    --bg-notification-item: var(--img-bg);
+    --width-notification-item: 300px;
+    --margin-notification-item: 0 0 0 0;
+    --height-notification-item: fit-content;
+    --align-self-notification-item: center;
+    --justify-self-notification-item: end;
+    
 }
