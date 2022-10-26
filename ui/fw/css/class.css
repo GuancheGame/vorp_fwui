@@ -251,6 +251,122 @@
     opacity: 1;
 }
 
+.wanted
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,200px));
+    grid-template-rows: 280px;
+    gap: var(--mp-m);
+    grid-auto-rows: max-content;
+    width: 100%;
+    /*max-width: 1400px;
+    justify-self: center;*/
+    background-image: var(--img-table);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    box-shadow: 0 0 20px #000;
+    border: 4px solid rgb(98 67 11 / 68%);
+    padding: var(--mp-m);
+    justify-content: center;
+}
+
+.wanted > div{
+    display: grid;
+    gap: 10px;
+    box-shadow: 0px 0px 3px black, 0 0 125px #8f5922 inset;
+    background: #fffef0;
+    /* v2.1 : borders effect with SVG : try to play with scale to change them */
+    filter: url(#wavy2);
+    /* v2.2 : Noise added for a vellum paper effect */
+    color: var(--c-text-secundary);
+    padding: var(--mp-s);
+    text-align: center;
+}
+
+.wanted > div img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.wanted > div h2{
+    color: var(--c-base);
+    font-size: var(--font-size-m);
+}
+
+.wanted > div h3{
+    font-size: var(--font-size-m);
+}
+
+.wanted > div span{
+    color: var(--c-base);
+    font-size: var(--font-size-l);
+    font-weight: bold;
+}
+
+.wanted > div > div{
+    position: absolute;
+    display: none;
+    transition: var(--transition);
+    background-image: var(--img-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.wanted > div p{
+    text-align: left;
+    padding: var(--mp-m);
+    color: var(--c-primary);
+}
+
+.wanted > div:hover > div{
+    display: block;
+}
+
+.wanted > div > div > nav{
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.wanted > div > a{
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    color: #000;
+}
+
+.windows-modal{
+    width:100%;
+    max-width: 800px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    display: grid;
+    gap: 20px;
+}
+
+.windows-modal input{
+    width: 100%;
+}
+
+.modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:-250px;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+}
+#newWanted:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
 /* PROGRESBAR RADIAL - BARRA DE PROGRESO RADIAL */
 
 @keyframes growProgressBar {

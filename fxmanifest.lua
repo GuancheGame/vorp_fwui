@@ -3,7 +3,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 
 game 'rdr3'
 lua54 'yes'
-version '1.2.6'
+version '1.3.7'
 vorp_name 'VORP Framewprk UI'
 vorp_github 'https://github.com/GuancheGame/vorp_fwui'
 author '[Guanche]'
