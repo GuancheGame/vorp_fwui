@@ -232,11 +232,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: var(--mp-m);
+    grid-auto-rows: max-content;
 }
 
 .nav-loop a{
     display: grid;
     align-items: center;
+    gap: var(--mp-m);
 }
 
 .nav-loop a i{
@@ -408,6 +410,7 @@ div[role="progressbar"] i {
 
 .accordion-main {
     max-width: 750px;
+    width: 100%;
 }
 
 .accordion-main .accordion-item {
